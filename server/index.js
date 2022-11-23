@@ -2,7 +2,7 @@
 //https://dev.to/novu/building-a-chat-app-with-socketio-and-react-2edj
 const express = require('express');
 const app = express();
-const PORT = 4000;
+const PORT = 3000;
 
 
 //New imports

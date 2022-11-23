@@ -1,7 +1,10 @@
 {
   "name": "letsplaychess",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.2.3",
     "chess.js": "^1.0.0-alpha.0",
@@ -26,16 +29,13 @@
     "web-vitals": "^3.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "react-scripts start, nodemon index.js",
     "build": "react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": "react-app"
   },
   "browserslist": {
     "production": [

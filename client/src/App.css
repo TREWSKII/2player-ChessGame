@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: linear-gradient(rgb(52, 65, 240), white, rgb(52, 65, 240),)
 }
 
 .board {
@@ -10,3 +11,9 @@
     display: flex;
     margin:9.5rem !important;
 }
+
+@media screen and (max-width: 600px) {
+    body {
+      ;
+    }
+  }

@@ -1,6 +1,4 @@
 
-// Set up a simple Node.js server using Express.js. The code snippet below returns a JSON object when you visit the http://localhost:4000/api in your browser. 
-//https://dev.to/novu/building-a-chat-app-with-socketio-and-react-2edj
 const express = require('express');
 const app = express();
 const PORT = 3000;

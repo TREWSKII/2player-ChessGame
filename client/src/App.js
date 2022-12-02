@@ -1,19 +1,28 @@
+
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Home from "./components/Home"
+import ChatPage from "./components/ChatPage";
+import socketIO from "socket.io-client"
 import { Chessboard } from 'react-chessboard';
-// import  Socketjs from './connection/socket.js';
-
 import './App.css';
-// import socketIO from 'socket.io-client';
-// const socket = socketIO.connect('http://localhost:3000');
 
 
+import HomePage from "./components/Home"
 
+const socket = socketIO.connect("http://localhost:3000")
 function App() {
   return (
-    <div>
-    <div className = "board"><Chessboard /></div>
-    {/* <div> <Socketjs /> </div> */}
-    
+
+    <BrowserRouter>
+        <div>
+          <Routes>
+            <Route path="/homepage"  element={<HomePage socket={socket}/>}></Route>
+            <Route path="/chess" element={<Chessboard className = "board"/>}></Route>
+            <Route path="/login" element={<Home socket={socket}/>}></Route>
+            <Route path="/chat" element={<ChatPage socket={socket}/>}></Route>
+          </Routes>
     </div>
+    </BrowserRouter>
     
   );
 }
